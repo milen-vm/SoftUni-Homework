@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-//var_dump($_POST);
 if (count($_POST) == 5) {
 	$amount = doubleval($_POST['amount']);
 	$currency = $_POST['currency'];
