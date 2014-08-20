@@ -1,0 +1,24 @@
+div > table {
+	margin-bottom: 10px;								
+}
+table, td, th {
+	box-sizing: border-box;
+	border: solid 1px black;				
+}
+form {
+	width: 700px;
+}
+#CVresult {
+	margin-left: 50px;
+	margin-top: 9px;
+}
+#CVresult, form {
+	display: inline-block;
+	vertical-align: top;
+}
+input {
+	margin-bottom: 3px;
+}
+td > span, strong {
+	color: red;
+}
