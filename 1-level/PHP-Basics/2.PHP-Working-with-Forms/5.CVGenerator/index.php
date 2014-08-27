@@ -64,7 +64,7 @@
 				<label for="from">From</label>
 				<input type="date" name="last_work[From]" id="from" />
 				<?php if (isset($error_7)): ?>
-				<strong"><?php echo $error_7; ?></strong>
+				<strong><?php echo $error_7; ?></strong>
 				<?php endif; ?>
 				<br />
 				<label for="to">To</label>
