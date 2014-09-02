@@ -1,0 +1,40 @@
+textarea {
+	width: 250px;
+	height: 200px;
+	margin-bottom: 5px;
+}
+table, th, td {
+	border: solid 1px black;
+}
+#blue {
+	color: blue;
+}
+#blue > span {
+	color: red;
+}
+input {
+	margin-bottom: 5px;
+}
+aside {
+	box-sizing: border-box;
+	margin: 5px;
+	border: solid 1px black;
+	background: linear-gradient(#c5d6eb 50%, #abc4e5 50%, #c5d6eb, #7fa0cb);
+	border-radius: 10px;
+	width: 160px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+ul {
+	list-style-type: circle;
+}
+li {
+	text-decoration: underline;
+}
+h2 {
+	margin-bottom: 0;
+}
+hr {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
