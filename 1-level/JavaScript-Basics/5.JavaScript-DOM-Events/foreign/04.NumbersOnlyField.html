@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04.Numbers Only Field</title>
+</head>
+<body>
+	<p>Problem4: Write a HTML page holding a form and a text field. Using JavaScript make the text field to accept numbers only.</p> 
+	<p>When a non-number character is entered through the keyboard (or by any other way), make the field red for a while and do not accept the change (preserve the previous value of the field).</p>
+
+    <input type="text" id="input-text"/>
+    <input type="text" id="output-text"/>
+    <script>
+    	var input = document.getElementById('input-text'),
+		    output = document.getElementById('output-text');
+
+		input.addEventListener('input', function () {
+		    var text = input.value,
+		        i;
+
+		    if(output.value.length > 0) {
+		        output.value = '';
+		    }
+
+		    for(i = 0; i < text.length; i++) {
+		        if(!isNaN(Number(text[i]))) {
+		            output.value += text[i];
+		            output.style.backgroundColor = 'white';
+		        }
+		        else {
+		            output.style.backgroundColor = 'red';
+		        }
+		    }
+
+		});
+    </script>
+</body>
+</html>

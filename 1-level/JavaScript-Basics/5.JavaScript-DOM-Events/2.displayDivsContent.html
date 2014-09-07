@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Display Divs Contennt</title>
+	</head>
+	<body>
+	  <div>first div</div>
+	  <div>second div</div>
+	  <div class="empty"></div>
+	  <div>third div<div>inner div</div></div>
+	  <ul id="result"></ul>
+	  <script>	     
+		   var divContent = document.querySelectorAll('div:not(.empty)');     	
+		   var len = divContent.length;
+		   console.log(len);
+		   // var result = '';
+		   for (var i = 0; i < len; i += 1) {
+		   		console.log(divContent[i].textContent);						//.innerText do not work in Firefox
+		   		var li = document.createElement('li');
+		   		li.textContent = divContent[i].textContent;
+		   		document.getElementById('result').appendChild(li);
+		   		// result += '<li>' + divContent[i].textContent + '</li>\n';     //other way to put list items
+		   }
+		   // document.getElementById('result').innerHTML = result;
+	  </script>
+	</body>
+</html>
