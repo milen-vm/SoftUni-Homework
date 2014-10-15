@@ -1,0 +1,23 @@
+Java
+	Java is a high-level language that looks like C # and C + + and partly in languages such as Delphi, VB.NET and C. 
+Java syntax is similar to that of C + + and C # and the transition of these languages to Java is easy. Java programs are 
+object-oriented. They represent a set of definitions of classes incorporating methods and therein lies the programming 
+logic. 
+	Java language is distributed along with a special environment that runs on, called Java Runtime Environment (JRE). 
+This environment includes the so-called Java Virtual Machine (JVM) and a set of standard libraries providing basic 
+functionality. Thanks to this the Java programs are portable and once they are written, then without almost no changes they 
+can run on hundreds of hardware platforms and operating systems.
+
+C#
+	C # is an object-oriented programming language developed by Microsoft, as part of the software platform. NET. Basis for C # is C + +, Java and somewhat languages such as Delphi, VB.NET and C. Like Java, C # is a set of definitions of 
+classes incorporating methods and the methods lies the logic of the programming - instructions which computer runs.
+
+PHP
+	PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP code is interpreted by a web server with a PHP processor module, which generates the resulting web page: PHP commands can be embedded directly into an HTML source document rather than calling an external file to process data. It has also evolved to include a command-line interface capability and can be used in standalone graphical applications.
+
+C++
+	C++ (pronounced see plus plus) is a general purpose programming language that is free-form and compiled. It is regarded as an intermediate-level language, as it comprises both high-level and low-level language features. It provides imperative, object-oriented and generic programming features.
+C++ is one of the most popular programming languages and is implemented on a wide variety of hardware and operating system platforms. As an efficient performance driven programming language it is used in systems software, application software, device drivers, embedded software, high-performance server and client applications, and entertainment software such as video games.[6] Various entities provide both open source and proprietary C++ compiler software, including the FSF, LLVM, Microsoft and Intel. C++ has influenced many other programming languages, for example, C# and Java.
+
+JavaScript
+	JavaScript (JS) is a dynamic computer programming language. It is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user, control the browser, communicate asynchronously, and alter the document content that is displayed. It is also being used in server-side programming, game development and the creation of desktop and mobile applications. The application of JavaScript to use outside of web pages—for example, in PDF documents, site-specific browsers, and desktop widgets—is also significant.
