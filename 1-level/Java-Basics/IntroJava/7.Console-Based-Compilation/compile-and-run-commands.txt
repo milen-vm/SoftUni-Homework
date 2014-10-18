@@ -1,0 +1,20 @@
+With text editor I created file SumTwoNumbers.java that includes code.
+
+
+
+I compile the code with command:
+
+"javac SumTwoNumbers.java"
+
+
+
+That is creates file "SumTwoNumbers.class"
+
+
+
+The program is exsecuting with command:
+
+"java SumTwoNumbers"
+
+
+
