@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>DOM Manipulation</title>
+        <script src="dom-manipulation.js" type="text/javascript"></script>
+    </head>
+    <body>
+    	<header>
+            <h1>Living Creatures</h1>
+        </header>
+        <section>
+            <article class="birds">
+                <h2 class="birds-heading">Birds</h2>
+                <ul class="birds-list">
+                    <li class="bird">Nightingale</li>
+                    <li class="bird">Owl</li>
+                    <li class="bird">Hawk
+                        <ul>
+                            <li class="sub-bird">Black Hawk</li>
+                            <li class="sub-bird">Chicago Hawk</li>
+                        </ul>
+                    </li>
+                    <li id="eagle" class="bird">Eagle</li>
+                    <li class="bird">Sparrow</li>
+                    <li class="bird">Falcon</li>
+                    <li class="bird">Blackbird</li>
+                </ul>
+            </article>
+            <article class="mammals">
+                <h2 class="mammal-heading">Mammals</h2>
+                <ol class="mammal-list">
+                    <li id="dolphin" class="mammal">Dolphin</li>
+                    <li class="mammal">Elephant</li>
+                    <li class="mammal">Hyena</li>
+                </ol>
+            </article>
+            <script type="text/javascript">
+            	var liElement = document.createElement("li");
+            	
+				// Appends a list item to ul.birds-list
+				domModule.appendChild(liElement,".birds-list");
+				
+				// Removes the first li child from the bird list
+				domModule.removeChild("ul.birds-list","li:first-child");
+				
+				// Adds a click event to all bird list items
+				domModule.addHandler("li.bird", 'click', function(){ alert("I'm a bird!"); });
+				
+				// Retrieves all elements of class "bird"
+				var elements = domModule.retrieveElements(".bird");
+            </script>
+        </section>    
+    </body>   
+</html>
