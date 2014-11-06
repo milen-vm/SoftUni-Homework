@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Canvas Geometry</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>		
+		<div>
+			<h2>Geometry Shapes</h2>
+			<form name="shapes" method="post">
+				<div id="parameters">
+					<label for="x">X1:</label>
+					<input type="text" id="x1" name="x1-value" value="50" />
+					<label for="y">Y1:</label>
+					<input type="text" id="y1" name="y1-value" value="60" />
+					<label for="color">Color:</label>
+					<input type="color" id="color" name="color" value="#f8d888" />
+					<br />
+					<div id="optional"></div>
+					<label for="shape">Shape:</label>
+					<select id="shape">
+						<option value="point">Point</option>
+						<option value="segment">Segment</option>
+						<option value="triangle">Triangle</option>
+						<option value="rectangle">Rectangle</option>
+						<option value="circle">Circle</option>
+					</select>				
+					<input type="button" id="add" value="Add" />
+				</div>
+				<select id="list" size="20"></select>
+				<div id="buttons">
+					<input type="button" id="up" value="&#8657;" />
+					<input type="button" id="down" value="&#8659;" />
+					<input type="button" id="remove" value="-" />
+				</div>				
+			</form>
+			<canvas id="canvas" width="600" height="500"></canvas>
+		</div>				
+		<script src="shapes-form.js" type="text/javascript"></script>
+		<script src="geometry-api.js" type="text/javascript"></script>
+		<script src="operating-canvas.js" type="text/javascript"></script>
+	</body>
+</html>
