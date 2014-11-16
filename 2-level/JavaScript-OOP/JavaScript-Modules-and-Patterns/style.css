@@ -1,0 +1,81 @@
+body, div, article, section, input, h2, h3 {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: right;
+}
+
+article {
+	border: 1px solid black;
+	width: 500px;
+	margin: 0 auto;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+#section-container {
+	border: 1px solid #6f6f6f;
+	min-height: 20px;
+	margin: 10px 0;
+	padding-bottom: 5px;
+}
+
+section > div {
+	padding: 10px 10px 0 10px;
+	margin: 5px;
+	border: 1px solid #6f6f6f;
+	text-align: left;
+	
+}
+
+section {
+	text-align: right;
+}
+
+input:not([type="checkbox"]) {
+	height: 25px;
+	font-size: 10pt;
+}
+
+input[type="button"] {
+	margin-right: 5px;
+	min-width: 30px;
+}
+
+input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+label {
+	display: inline-block;
+	width: 94%;
+	padding: 5px 0;
+}
+
+div:not(:last-child) > label {
+	border-bottom: 1px solid black;	
+}
+
+input[type="checkbox"]:checked + label{
+    background: #95ef95;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

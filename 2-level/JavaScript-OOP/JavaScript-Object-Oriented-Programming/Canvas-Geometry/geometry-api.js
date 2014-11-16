@@ -97,7 +97,7 @@ var Shape = (function() {
 	    var isValidTriangle = sideABtoC && sideACtoB && sideBCtoA;
 	    
 	    if (!isValidTriangle) {
-	        throw {message: 'Invalid triangle!'};
+	        throw new Error('Invalid triangle!');
 	    }
 	}
 	

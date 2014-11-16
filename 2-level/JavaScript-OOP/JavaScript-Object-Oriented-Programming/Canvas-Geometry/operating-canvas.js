@@ -7,8 +7,7 @@ var operatingCanvas = (function() {
 	}
 		
 	function drawShapes(canvasId) {	
-		clearCanvas(canvasId);
-		
+		clearCanvas(canvasId);		
 		var count = shapes.length - 1;
 		for (var i = count; i >= 0; i--) {
 		  	shapes[i].draw(canvasId);
@@ -23,8 +22,7 @@ var operatingCanvas = (function() {
 	
 	function addShapeToArray(selectId) {
 		var shapeType = document.getElementById(selectId).value;				
-		
-		
+				
 		switch(shapeType) {
 			case 'point':
 				shapes.unshift(createPoint());
