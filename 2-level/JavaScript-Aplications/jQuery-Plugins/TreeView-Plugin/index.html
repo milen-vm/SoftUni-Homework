@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tree View</title>
+		<link href="style.css" rel="stylesheet" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="tree-view.js"></script>
+	</head>
+	<body>		
+		<ul id="tree">
+			<li>Item 1
+				<ul>
+					<li>Sub Item 1</li>
+					<li>Sub Item 2</li>
+					<li>Sub Item 3</li>
+					<li>Sub Item 4</li>
+				</ul>	
+			</li>
+			<li>Item 2
+				<ul>
+					<li>Sub Item 1
+						<ul>
+							<li>Sub Sub Item 1</li>
+							<li>Sub Sub Item 2</li>
+							<li>Sub Sub Item 3</li>
+							<li>Sub Sub Item 4</li>
+						</ul>
+					</li>
+					<li>Sub Item 2
+						<ul>
+							<li>Sub Sub Item 1</li>
+							<li>Sub Sub Item 2</li>
+							<li>Sub Sub Item 3</li>
+							<li>Sub Sub Item 4</li>
+						</ul>
+					</li>
+					<li>Sub Item 3
+						<ul>
+							<li>Sub Sub Item 1</li>
+							<li>Sub Sub Item 2</li>
+							<li>Sub Sub Item 3</li>
+							<li>Sub Sub Item 4</li>
+						</ul>
+					</li>
+					<li>Sub Item 4</li>
+				</ul>	
+			</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#tree').treeView();
+				// $.fn.treeView('#tree');
+			});
+		</script>
+	</body>
+</html>

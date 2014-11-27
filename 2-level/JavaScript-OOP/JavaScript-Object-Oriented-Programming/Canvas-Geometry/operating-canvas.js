@@ -98,12 +98,16 @@ var operatingCanvas = (function() {
 		return circle;
 	}
 	
-	function createShapesList(listId) {
+	function createShapesList(listId, selectedIndex) {
 		var list = document.getElementById(listId);
 		list.innerHTML = '';
 		for (var i = 0; i  < shapes.length; i ++) {
 			var shapeElement = document.createElement('option');
 			shapeElement.setAttribute('value', i);
+			if (selectedIndex != undefined && selectedIndex === i) {
+				shapeElement.setAttribute('selected', 'selected');
+			};
+			
 			shapeElement.innerHTML = shapes[i].toString();
 			list.appendChild(shapeElement);
 		};
@@ -128,7 +132,7 @@ var operatingCanvas = (function() {
 		shapes[index] = shape;
 		
 		drawShapes(canvasId);
-		createShapesList(listId);
+		createShapesList(listId, index - 1);
 	}
 	
 	function moveShapeDown(canvasId, listId) {
@@ -142,7 +146,7 @@ var operatingCanvas = (function() {
 		shapes[index] = shape;
 		
 		drawShapes(canvasId);
-		createShapesList(listId);
+		createShapesList(listId, index + 1);
 	}
 	
 	return {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>List Countries</title>
+		<link href="style.css" rel="stylesheet" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="countries.js"></script>
+		<script type="text/javascript" src="jquery.noty.packaged.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<input type="text" id="country-name" placeholder="Country name..." />
+			<input type="button" id="add-country" value="Add Country" />
+		</div>
+		<div class="container">
+			<h2>Countries</h2>
+			<select id="countries" size="10"></select>
+			<input type="text" id="new-country-name" placeholder="Select Country..." />
+			<input type="button" id="edit-country-name" value="Edit Name" />
+			<input type="button" id="delete-country" value="Delete Country" />
+		</div>
+		<div class="container">
+			<h2>Towns</h2>
+			<select id="towns" size="10"></select>
+			<input type="text" id="new-town-name" placeholder="Select Town..." />
+			<input type="button" id="edit-town-name" value="Edit Name" />
+			<input type="button" id="add-town" value="Add Town" />
+			<input type="button" id="delete-town" value="Delete Town" />
+		</div>
+	</body>
+</html>

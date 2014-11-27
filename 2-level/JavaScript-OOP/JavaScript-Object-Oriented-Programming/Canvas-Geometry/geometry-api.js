@@ -28,7 +28,7 @@ var Shape = (function() {
 	}
 	
 	Shape.prototype.toString = function toString() {
-	    return this.constructor.name + ', Color: ' +
+	    return this.constructor.name + ' - Color: ' +
 	    	this._hexColor + ', [ ' + this._x1 + ', ' + this._y1 + ' ]';
 	};
 	
@@ -151,6 +151,7 @@ var Shape = (function() {
 	    ctx.arc(this._x1, this._y1, 2, 0, Math.PI*2, true);
 	    ctx.fill();
 	};
+	
 	return {
 		Circle: Circle,
 		Rectangle: Rectangle,

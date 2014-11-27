@@ -1,0 +1,16 @@
+/*body, div, input {
+	margin: 0;
+	padding: 0;
+}*/
+.container {
+	display: inline-block;
+	width: 300px;
+}
+
+select {
+	width: 150px;
+}
+
+input[type="text"] {
+	width: 140px;
+}
