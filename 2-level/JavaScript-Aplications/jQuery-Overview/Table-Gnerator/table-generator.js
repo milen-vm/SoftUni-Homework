@@ -27,8 +27,8 @@
 	function makeTableHead(data) {
 		var $headTableRow = $('<tr>');
 		$.each(data, function(key) {
-			var str = capitalizeFirstLetter(key);
-			$headTableRow.append($('<th>').text(str));
+			var title = capitalizeFirstLetter(key);
+			$headTableRow.append($('<th>').text(title));
 		});
 		
 		return $headTableRow;

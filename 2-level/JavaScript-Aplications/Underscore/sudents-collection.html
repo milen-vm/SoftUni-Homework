@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Students collection</title>
+        <link href="style.css" rel="stylesheet" />    
+    </head>
+    <body>
+        <div>
+            <textarea id="input-collection">
+[{"gender":"Male","firstName":"Joe","lastName":"Riley","age":22,"country":"Russia"},
+{"gender":"Female","firstName":"Lois","lastName":"Morgan","age":41,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Roy","lastName":"Wood","age":33,"country":"Russia"},
+{"gender":"Female","firstName":"Diana","lastName":"Freeman","age":40,"country":"Argentina"},
+{"gender":"Female","firstName":"Bonnie","lastName":"Hunter","age":23,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Joe","lastName":"Young","age":16,"country":"Bulgaria"},
+{"gender":"Female","firstName":"Kathryn","lastName":"Murray","age":22,"country":"Indonesia"},
+{"gender":"Male","firstName":"Dennis","lastName":"Woods","age":37,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Billy","lastName":"Patterson","age":24,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Willie","lastName":"Gray","age":42,"country":"China"},
+{"gender":"Male","firstName":"Justin","lastName":"Lawson","age":38,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Ryan","lastName":"Foster","age":24,"country":"Indonesia"},
+{"gender":"Male","firstName":"Eugene","lastName":"Morris","age":37,"country":"Bulgaria"},
+{"gender":"Male","firstName":"Eugene","lastName":"Rivera","age":45,"country":"Philippines"},
+{"gender":"Female","firstName":"Kathleen","lastName":"Hunter","age":28,"country":"Bulgaria"}]
+            </textarea>           
+            <ul>
+                <li>
+                    <input type="radio" id="op-1" name="operation" value="operation-1" />
+                    <label for="op-1">Get all students with age between 18 and 24</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-2" name="operation" value="operation-2" />
+                    <label for="op-2">Get all students whose first name is alphabetically before their last name</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-3" name="operation" value="operation-3" />
+                    <label for="op-3">Get only the names of all students from Bulgaria</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-4" name="operation" value="operation-4" />
+                    <label for="op-4">Get the last five students</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-5" name="operation" value="operation-5" />
+                    <label for="op-5">Get the first three students who are not from Bulgaria and are male</label>
+                </li>
+            </ul>
+        </div>
+        <textarea id="output-collection"></textarea>       
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/underscore-min.js"></script>
+        <script type="text/javascript" src="scripts/students-collection.js"></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Consuming Remote Data</title>
+        <link href="style/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Library</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="book-lib">
+                
+            </tbody>
+            
+        </table>
+        <div id="input">
+            <input type="text" id="title" placeholder="Title..." />
+            <input type="text" id="author" placeholder="Author..." />
+            <input type="text" id="isbn" placeholder="ISBN..." />
+            <input type="button" id="add-book" value="Add New Book" />
+        </div>      
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/ajax-requester.js"></script>
+        <script type="text/javascript" src="scripts/service.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </body>
+</html>

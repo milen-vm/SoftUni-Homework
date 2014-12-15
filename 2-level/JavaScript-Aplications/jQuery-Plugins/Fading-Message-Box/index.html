@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Fading Message Box</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="message-box.js"></script>
+</head>
+<body>
+	<div id="message-box">
+		<button id="success">Success</button>
+		<button id="error">Error</button>
+		<div id="message"></div>
+	</div>
+	 <script>
+	 	$(document).ready(function() {
+	 		$('#success').click(function() {
+		 			$().messageBox('#message').success('Успех');
+		 		}
+	 		);
+	 		$('#error').click(function() {
+		 			$().messageBox('#message').error('Грешка');
+		 		}
+	 		);
+	 	});
+    </script>
+</body>
+</html>

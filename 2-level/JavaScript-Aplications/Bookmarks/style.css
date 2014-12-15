@@ -1,0 +1,102 @@
+body, header, footer, div, ul, li, a, span, input, label, p, hr {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    margin-bottom:50px;
+    background: #F79646;
+}
+
+#main {
+    
+}
+
+header {
+    border: 1px solid #B66E33;
+    background: #FAC090;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header > p {
+   vertical-align: middle;
+   font-size: 18pt;
+   font-weight: bold; 
+}
+
+footer{
+    border: 1px solid #B66E33;
+    position:fixed;
+    height:50px;
+    background: #E46C0A;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer > p {
+    color: white;
+    font-size: 12pt;
+    
+}
+
+#home-view > div {
+    width: 350px;
+    min-height: 150px;
+    margin: 0 auto;
+    background: #FAC090;
+    margin-top: 180px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18pt;
+    font-weight: bold;
+    border: 1px solid #B66E33;
+    border-radius: 10px;
+}
+
+#home-view > div > p {
+    margin: 10px 5px;
+}
+
+#home-view > div > a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #B66E33;
+    border-radius: 5px;
+    background: #F79646;
+    margin-top: 30px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+#btn-show-login-view {
+    margin-right: 10px;
+}
+
+#btn-show-register-view {
+    margin-left: 10px;
+}
+
+#login-view > div {
+    
+}
+
+
+
+
+
+
+
+
+
+
+

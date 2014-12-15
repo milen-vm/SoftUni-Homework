@@ -1,0 +1,102 @@
+body, h2, table, tr, th, td, input {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #272b30;
+    color: #c8c8c8; 
+}
+
+div {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+table {
+    
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: left;
+    width: 250px;
+    height: 50px;
+    padding-left: 50px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #353a41;
+}
+
+table th, tr:nth-child(even) {
+    background-color: #2e3338;
+}
+
+td:not(:last-child):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+th:last-child, td:last-child {
+    text-align: center;
+    padding: 0;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 260px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    background: #C8C8C8;
+    font-size: 12pt;
+}
+
+#input {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#add-book {
+    margin-left: 33px;
+    background: lightblue;
+    border: 2px solid lightblue;
+}
+
+.delete-book {
+    background: red;
+    border: 2px solid red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

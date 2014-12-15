@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Greeting System</title>
+        <link href="style.css" rel="stylesheet" />       
+    </head>
+    <body>
+        <div id="not-registred">
+            <h2>This is your first visit to my site!</h2>
+            <p>Please enter your name.</p>
+            <input type="text" id="name" placeholder="Name..." />
+            <input type="button" id="login" value="Login" />
+        </div>
+        <div id="registred">
+            <h2>Hi <span id="user-name"></span>. Welcome to may site!</h2>
+            <p>Session visits count: <span id="s-count"></span></p>
+            <p>Total visits count: <span id="t-count"></span></p>
+            <input type="button" id="logout" value="Logout" />
+        </div>
+        <script type="text/javascript" src="greeting-system.js"></script>
+    </body>
+</html>

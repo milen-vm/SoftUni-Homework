@@ -1,0 +1,22 @@
+div {
+    width: 770px;
+    display: inline-block;
+}
+ul {
+     list-style-type: none;
+}
+
+textarea, ul {
+    vertical-align: top;
+    display: inline-block;
+}
+
+#input-collection {
+    width: 750px;
+    height: 300px;    
+}
+
+#output-collection {
+    width: 400px;
+    height: 600px
+}

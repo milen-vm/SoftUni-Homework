@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book Store</title>
+        <link href="style.css" rel="stylesheet" />    
+    </head>
+    <body>
+        <div>
+            <textarea id="input-collection">
+[{"book":"The Grapes of Wrath","author":"John Steinbeck","price":"34,24","language":"French"},
+{"book":"The Great Gatsby","author":"F. Scott Fitzgerald","price":"39,26","language":"English"},
+{"book":"Nineteen Eighty-Four","author":"George Orwell","price":"15,39","language":"English"},
+{"book":"Ulysses","author":"James Joyce","price":"23,26","language":"German"},
+{"book":"Lolita","author":"Vladimir Nabokov","price":"14,19","language":"German"},
+{"book":"Catch-22","author":"Joseph Heller","price":"47,89","language":"German"},
+{"book":"The Catcher in the Rye","author":"J. D. Salinger","price":"25,16","language":"English"},
+{"book":"Beloved","author":"Toni Morrison","price":"48,61","language":"French"},
+{"book":"Of Mice and Men","author":"John Steinbeck","price":"29,81","language":"Bulgarian"},
+{"book":"Animal Farm","author":"George Orwell","price":"38,42","language":"English"},
+{"book":"Finnegans Wake","author":"James Joyce","price":"29,59","language":"English"},
+{"book":"The Grapes of Wrath","author":"John Steinbeck","price":"42,94","language":"English"}]
+            </textarea>
+            <ul>
+                <li>
+                    <input type="radio" id="op-1" name="operation" value="operation-1" />
+                    <label for="op-1">Group all books by language and sort them by author (if two books have the same author, sort by price)</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-2" name="operation" value="operation-2" />
+                    <label for="op-2">Get the average book price for each author</label>
+                </li>
+                <li>
+                    <input type="radio" id="op-3" name="operation" value="operation-3" />
+                    <label for="op-3">Get all books in English or German, with price below 30.00, and group them by author</label>
+                </li>
+            </ul>
+        </div>
+        <textarea id="output-collection"></textarea>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/underscore-min.js"></script>
+        <script type="text/javascript" src="scripts/book-store.js"></script>
+    </body>
+</html>

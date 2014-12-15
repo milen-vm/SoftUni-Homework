@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bookmarks</title>
+        <link href="style.css" rel="stylesheet" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/lib/jquery.noty.packaged.min.js"></script>
+        <script type="text/javascript" src="scripts/ajax-requester.js"></script>
+        <script type="text/javascript" src="scripts/service.js"></script>
+        <script type="text/javascript" src="scripts/user-session.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <!-- <div> -->
+                <p>Bookmarks<span></span></p>
+                <a href="#" id="logout-btn">Logout</a>
+            <!-- </div> -->
+        </header>
+        <div id="main">
+            <div id="home-view">
+                <div>
+                    <p>Welcome</p>
+                    <hr />
+                    <a href="#" id="btn-show-login-view">Login</a>
+                    <a href="#" id="btn-show-register-view">Register</a>
+                </div>
+            </div>
+            <div id="login-view">
+                <div>
+                    <p>Login</p>
+                    <hr />
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" />
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" />
+                    <a href="#" id="btn-login">Login</a>
+                    <a href="#" id="show-register-view">Register here</a>
+                </div>
+            </div>
+            <div id="register-view">
+                <div>
+                    <p>Register</p>
+                    <hr />
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" />
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" />
+                    <a href="#" id="btn-register">Register</a>
+                    <a href="#" id="show-login-view">Login here</a>
+                </div>
+            </div>
+            <div id="bookmark-view">
+                <ul>
+                    
+                </ul>
+                <div>
+                     <p>New Bookmark</p>
+                    <label for="title">Title: </label>
+                    <input type="text" id="title" />
+                    <label for="url">Url: </label>
+                    <input type="url" id="url" />
+                    <a href="#" id="btn-add-bookmark">Add</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!-- <div> -->
+                <p>&copy; 2014 by SoftUni Foundation, No Rights Reserved</p>
+            <!-- </div> -->
+        </footer>
+    </body>
+</html>

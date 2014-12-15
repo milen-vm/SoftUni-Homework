@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Poll</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="poll.js"></script>     
+    </head>
+    <body>
+        <h2>Remaining time: <span id="timer"></span> seconds</h2>
+        <ol>
+            <li>
+                <p>When is new year?</p>
+                <input type="radio" id="q1-a1" name="q1" value="a1" />
+                <label for="q1-a1">01.01</label>
+                <input type="radio" id="q1-a2" name="q1" value="a2" />
+                <label for="q1-a2">31.12</label>
+                <input type="radio" id="q1-a3" name="q1" value="a3" />
+                <label for="q1-a3">28.02</label>               
+            </li>
+            <li>
+                <p>When is Chinese new 2015 year?</p>
+                <input type="radio" id="q2-a1" name="q2" value="a1" />
+                <label for="q2-a1">01.01</label>
+                <input type="radio" id="q2-a2" name="q2" value="a2" />
+                <label for="q2-a2">19.02</label>
+                <input type="radio" id="q2-a3" name="q2" value="a3" />
+                <label for="q2-a3">28.02</label>               
+            </li>
+            <li>
+                <p>When is Christmas?</p>
+                <input type="radio" id="q3-a1" name="q3" value="a1" />
+                <label for="q3-a1">24.11</label>
+                <input type="radio" id="q3-a2" name="q3" value="a2" />
+                <label for="q3-a2">25.12</label>
+                <input type="radio" id="q3-a3" name="q3" value="a3" />
+                <label for="q3-a3">26.01</label>               
+            </li>
+        </ol>
+        <input type="button" id="answer" value="Answer"/>
+    </body>
+</html>

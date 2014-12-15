@@ -51,23 +51,3 @@ $(document).ready(function() {
 
     startSlider();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
