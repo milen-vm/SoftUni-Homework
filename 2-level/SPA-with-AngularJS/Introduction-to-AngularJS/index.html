@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Intorduction to AngularJS</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body ng-app="intorToAngular">
+        <div ng-controller="StudentPage">
+            <h2>1. Student Page</h2>
+            <ul>
+                <li>Name: {{student.name}}</li>
+                <li>Grade: {{student.grade}}</li>
+                <li>School: {{student.school}}</li>
+                <li>Teacher: {{student.teacher}}</li>
+            </ul>
+            <img alt="student-photo" ng-src="{{student.photo}}" />
+        </div>
+        <div ng-controller="BindImage">
+            <h2>2. Bind Image Source to Text Box</h2>
+            <input type="url" ng-value="url" ng-model="url" />
+            <img alt="Invalid-picture-url" ng-src="{{url}}" />
+        </div>
+        <div ng-controller="Tiger">
+            <h2>3. Tiger</h2>            
+            <div ng-style="style.textContainer">                
+                <div ng-style="style.div">
+                    <h3 ng-style="style.head">Tiger</h3>
+                    <ul ng-style="style.list">
+                        <li ng-style="style.item"><span ng-style="style.title">Name:</span> {{tiger.Name}}</li>
+                        <li ng-style="style.item"><span ng-style="style.title">Born:</span> {{tiger.Born}}</li>
+                        <li ng-style="style.item"><span ng-style="style.title">Birth date:</span> {{tiger.BirthDate}}</li>
+                        <li ng-style="style.item"><span ng-style="style.title">Live:</span> {{tiger.Live}}</li>
+                    </ul>
+                </div>
+                <div ng-style="style.div">
+                    <img ng-style="style.image" alt="tiger-photo" ng-src='{{urlPhoto}}' />
+                </div>                
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="controllers/student-page.js"></script>
+        <script type="text/javascript" src="controllers/bind-image.js"></script>
+        <script type="text/javascript" src="controllers/tiger.js"></script>
+    </body>
+</html>

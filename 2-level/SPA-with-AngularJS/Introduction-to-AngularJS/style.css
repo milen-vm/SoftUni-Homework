@@ -1,0 +1,21 @@
+body > div {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    width: 350px;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="url"] {
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+div[ng-controller="Tiger"] {
+    margin-right: 0;
+    width: 580px;
+}
