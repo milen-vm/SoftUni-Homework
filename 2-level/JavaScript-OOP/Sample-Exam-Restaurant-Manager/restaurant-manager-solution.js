@@ -140,7 +140,7 @@ function processRestaurantManagerCommands(commands) {
 			    }
 		    
             	this.setName(name);
-    	this.setPrice(price);
+    	        this.setPrice(price);
             	this.setCalories(calories);
             	this.setQuantity(quantity);
             	this.setTimeToPrepare(timeToPrepare);
