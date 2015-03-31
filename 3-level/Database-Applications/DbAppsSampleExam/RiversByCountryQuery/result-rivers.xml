@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<results>
+  <rivers total-count="6" listed-count="2">
+    <river>Amazon</river>
+    <river>Madeira</river>
+  </rivers>
+  <rivers total-count="0" listed-count="0" />
+  <rivers total-count="1" listed-count="1">
+    <river>Danube</river>
+  </rivers>
+</results>

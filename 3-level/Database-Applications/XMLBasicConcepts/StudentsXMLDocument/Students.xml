@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<students xmlns="urn:students"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:students file://./StudentsSchema.xsd">
+	<student>
+		<name>Maria Petrova</name>
+		<gender>Female</gender>
+		<birth-date>1988-03-20</birth-date>
+		<phone-number>02-9569-235</phone-number>
+		<email>maria@abv.bg</email>
+		<university>SoftUni</university>
+		<specialty>Web developer</specialty>
+		<faculty-number>1234567890</faculty-number>
+		<taken-exams>
+			<exam>
+				<name>JavaScript</name>
+				<date>2015-03-02T13:55:06Z</date>
+				<grade>6.00</grade>
+			</exam>
+			<exam>
+				<name>HTML</name>
+				<date>2015-01-10T13:55:06Z</date>
+				<grade>6.00</grade>
+			</exam>
+			<exam>
+				<name>PHP</name>
+				<date>2014-12-15T13:55:06Z</date>
+				<grade>6.00</grade>
+			</exam>
+		</taken-exams>
+	</student>
+	<student>
+		<name>Ivan Ivanov</name>
+		<gender>Male</gender>
+		<birth-date>1985-06-15</birth-date>
+		<email>ivan@abv.bg</email>
+		<university>SoftUni</university>
+		<specialty>Web developer</specialty>
+		<faculty-number>0234567890</faculty-number>
+		<taken-exams>
+			<exam>
+				<name>JavaScript</name>
+				<date>2015-03-02T13:55:06Z</date>
+				<grade>5.12</grade>
+			</exam>
+			<exam>
+				<name>HTML</name>
+				<date>2015-01-10T13:55:06Z</date>
+				<grade>6.00</grade>
+			</exam>
+			<exam>
+				<name>PHP</name>
+				<date>2014-12-15T13:55:06Z</date>
+				<grade>5.23</grade>
+			</exam>
+		</taken-exams>
+	</student>
+	<student>
+		<name>Dimitar Dimitrov</name>
+		<gender>Male</gender>
+		<birth-date>1981-09-15</birth-date>
+		<phone-number>02-9509-885</phone-number>
+		<email>dimo@abv.bg</email>
+		<university>SoftUni</university>
+		<specialty>Web developer</specialty>
+		<taken-exams>
+			<exam>
+				<name>JavaScript</name>
+				<date>2015-03-02T13:55:06Z</date>
+				<grade>5.06</grade>
+			</exam>
+			<exam>
+				<name>HTML</name>
+				<date>2015-01-10T13:55:06Z</date>
+				<grade>5.78</grade>
+			</exam>
+			<exam>
+				<name>PHP</name>
+				<date>2014-12-15T13:55:06Z</date>
+				<grade>5.03</grade>
+			</exam>
+		</taken-exams>
+	</student>
+</students>

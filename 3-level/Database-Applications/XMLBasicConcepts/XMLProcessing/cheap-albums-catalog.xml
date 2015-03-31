@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<music-catalog culture="en-US">
+  <album>
+    <name>Dummy</name>
+    <artist>Portishead</artist>
+    <year>2012</year>
+    <producer>Pesho</producer>
+    <price>15.00</price>
+    <songs>
+      <song title="Mysterons" length="5:02" />
+      <song title="Sour Times" length="4:11" />
+      <song title="Strangers" length="3:55" />
+      <song title="It Could Be Sweet" length="4:16" />
+      <song title="Wandering Star" length="4:51" />
+      <song title="It's a Fire" length="3:49" />
+      <song title="Numb" length="3:54" />
+      <song title="Roads" length="5:02" />
+      <song title="Pedestal" length="3:39" />
+      <song title="Biscuit" length="5:01" />
+      <song title="Glory Box" length="5:06" />
+    </songs>
+  </album>
+  <album>
+    <name>Sample album</name>
+    <artist>Sample band</artist>
+    <year>1999</year>
+    <producer>Kondio</producer>
+    <price>11.99</price>
+    <songs>
+      <song title="Song 1" length="4:58" />
+      <song title="Song 2" length="3:57" />
+      <song title="Song 3" length="3:16" />
+      <song title="Song 4" length="4:29" />
+      <song title="Song 5" length="3:27" />
+      <song title="Song 6" length="6:27" />
+      <song title="Song 7" length="1:31" />
+      <song title="Song 8" length="4:43" />
+      <song title="Song 9" length="6:45" />
+      <song title="Song 10" length="3:32" />
+      <song title="Song 11" length="5:45" />
+    </songs>
+  </album>
+  <album>
+    <name>Dummy</name>
+    <artist>Portishead</artist>
+    <year>2012</year>
+    <producer>Pesho</producer>
+    <price>15.00</price>
+    <songs>
+      <song title="Mysterons" length="5:02" />
+      <song title="Sour Times" length="4:11" />
+      <song title="Strangers" length="3:55" />
+      <song title="It Could Be Sweet" length="4:16" />
+      <song title="Wandering Star" length="4:51" />
+      <song title="It's a Fire" length="3:49" />
+      <song title="Numb" length="3:54" />
+      <song title="Roads" length="5:02" />
+      <song title="Pedestal" length="3:39" />
+      <song title="Biscuit" length="5:01" />
+      <song title="Glory Box" length="5:06" />
+    </songs>
+  </album>
+</music-catalog>
