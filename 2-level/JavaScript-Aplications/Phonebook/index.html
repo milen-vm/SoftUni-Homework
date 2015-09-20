@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Phonebook</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header id="header">Phonebook<span></span></header>
+
+	<!-- Left sidebar menu -->
+	<ul id="menu">
+		<li><a href="#" id="home-link" class="link">Home</a></li>
+		<li><a href="#" id="phonebook-link" class="link">Phonebook</a></li>
+		<li><a href="#" id="add-phone-link" class="link">Add Phone</a></li>
+		<li><a href="#" id="edit-profile-link" class="link">Edit Profile</a></li>
+		<li><a href="#" id="logout-link" class="link">Logout</a></li>
+	</ul>
+	
+	<!-- Main screen placeholder -->
+	<main id="wrapper">
+	    <!-- Welcome screen -->
+        <div id="welcome-home" class="dialog-box">
+            <h1>Welcome</h1>
+            <a href="#" id="goto-login-btn" class="button">Login</a>
+            <a href="#" id="goto-register-btn" class="button">Register</a>
+        </div>
+        
+        <br/>
+    
+        <!-- Registration screen -->
+        <div id="register-form" class="dialog-box">
+            <h1>Register</h1>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="registration-username" />
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="registration-password" />
+            </p>
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" />
+            </p>
+            <p class="buttons">
+                <a href="#" id="register-btn" class="button">Register</a>
+                <a href="#" id="goto-login-form" class="link">Login</a>
+            </p>
+        </div>
+    
+        <br/>
+    
+        <!-- Login screen -->
+        <div id="login-form" class="dialog-box">
+            <h1>Login</h1>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="login-username" />
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="login-password" />
+            </p>
+            <p class="buttons">
+                <a href="#" id="login-btn" class="button">Login</a>
+                <a href="#" id="goto-registration-form" class="link">Register</a>
+            <p>
+        </div>
+    
+        <br/>
+        
+        <!-- User home screen -->
+        <div id="user-home" class="dialog-box">
+            <h1>Welcome</h1>
+            <p>Please use the navigation menu on the left.</p>
+        </div>
+    
+        <br/>
+        
+        <!-- Phonebook screen -->
+        <div id="phones">
+            <table >
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id="phone-list"></tbody>
+            </table>
+            <p><a href="#" class="button">Add Phone</a></p>
+        </div>
+        
+    
+        <br/>
+        
+        <!-- Add phone screen -->
+        <div id="add-phone-form" class="dialog-box">
+            <h1>Add Phone</h1>
+            <p>
+                <label for="personName">Name:</label>
+                <input type="text" id="personName">
+            </p>
+            <p>
+                <label for="phoneNumber">Number:</label>
+                <input type="text" id="phoneNumber">
+            </p>
+            <p class="buttons">
+                <a href="#" id="add-phone-btn" class="button">Add</a>
+                <a href="#" id="cancel-phone-btn" class="button">Cancel</a>
+            </p>
+        </div>
+        
+        <br/>
+        
+        <!-- Edit phone screen -->
+        <div id="edit-phone-form" class="dialog-box">
+            <h1>Edit Phone</h1>
+            <p>
+                <label for="personName">Name:</label>
+                <input type="text" id="edit-personName">
+            </p>
+            <p>
+                <label for="phoneNumber">Number:</label>
+                <input type="text" id="edit-personNumber">
+            </p>
+            <p class="buttons">
+                <a href="#" id="edit-phone-btn" class="button">Edit</a>
+                <a href="#"  class="button">Cancel</a>
+            </p>
+        </div>
+        
+        <br/>
+        
+        <!-- Delete phone screen -->
+        <div id="delete-phone-form" class="dialog-box">
+            <h1>Confirm Delete Phone?</h1>
+            <p>
+                <label for="personName">Name:</label>
+                <input type="text" id="personName" value="Peter Norton" disabled="disabled">
+            </p>
+            <p>
+                <label for="phoneNumber">Number:</label>
+                <input type="text" id="phoneNumber" value="+1 855 344 567" disabled="disabled">
+            </p>
+            <p class="buttons">
+                <a href="#" class="button">Delete</a>
+                <a href="#" class="button">Cancel</a>
+            </p>
+        </div>
+        
+        <br/>
+        
+        <!-- Edit user profile screen -->
+        <div id="edit-profile-form" class="dialog-box">
+            <h1>Edit Profile</h1>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" value="nakov">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" value="Svetlin Nakov">
+            </p>
+            <p class="buttons">
+                <a href="#" class="button">Edit</a>
+                <a href="#" class="button">Cancel</a>
+            </p>
+        </div>
+	</main>
+	
+	
+	
+	
+	<footer id="footer">&copy; 2014 by Software University Foundation, No Rights Reserved</footer>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.noty.packaged.min.js"></script>
+    <script type="text/javascript" src="scripts/ajax-requester.js"></script>
+    <script type="text/javascript" src="scripts/service.js"></script>
+    <script type="text/javascript" src="scripts/user-session.js"></script>
+    <script type="text/javascript" src="scripts/phonebook-app.js"></script>
+</body>
+
+</html>
